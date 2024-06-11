@@ -11,12 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			btn.addEventListener('click', function () {
 				dropdown.classList.toggle('visible');
 			});
-
-			document.addEventListener('click', function (event) {
-				if (!dropdown.contains(event.target)) {
-					dropdown.classList.remove('visible');
-				}
-			});
 		} else if (action === 'hover') {
 			btn.addEventListener('mouseenter', function () {
 				dropdown.classList.add('visible');
